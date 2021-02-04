@@ -24,7 +24,9 @@ int main() {
         }
         outFile.close();
     } else {
-        cout << "Error opening file: " << strerror(errno) << endl;
+        // cout << "Error opening file: " << strerror(errno) << endl;
+        // This call works on macOS and may work on Windows, but not on Ubuntu
+        cout << "Error opening file!" << endl;
     }
     if(outFile.good()){
 
