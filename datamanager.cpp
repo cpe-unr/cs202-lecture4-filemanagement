@@ -10,7 +10,7 @@ using namespace std;
 
 int countLinesInFile(string fileName) {
     ifstream inputFile;
-    int numLines;
+    int numLines = 0;
     inputFile.open(fileName);
     string tmp;
     while(getline(inputFile, tmp)){
